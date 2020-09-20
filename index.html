@@ -131,21 +131,16 @@
 		var date = new Date();
 		date.setHours(0,0,0,0);
 
-		var holiday=new Date('2020-09-20');
-		    holiday.setHours(0,0,0,0);
+		var holiday=new Date('2020-09-19');
+		    holiday.setHours(0,0,0,0);		
 		
-		if (date===holiday){
-			kayako.minimize()
-		  } 
-	   else{
-  		if (kayako.visibility() === 'minimized') {
+  		if (kayako.visibility() === 'minimized' && date!==holiday) {
 		    kayako.maximize()
 		} 
 		else {
 		    kayako.minimize()
 		}
 		e.preventDefault()
-	}
   }
 			
 	</script>
