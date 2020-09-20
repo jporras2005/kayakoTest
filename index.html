@@ -128,11 +128,11 @@
 
 	// toggle the messenger state
 	function toggleMessenger (e) {		
-		var date = new Date();
-		date.setHours(0,0,0,0);
+		var date = new Date()
+		date.setHours(0,0,0,0)
 
-		var holiday=new Date('2020-09-20');
-		    holiday.setHours(0,0,0,0);		
+		var holiday=new Date('2020-09-20')
+		    holiday.setHours(0,0,0,0)		
 		
   		if (kayako.visibility() === 'minimized' && date!==holiday) {
 		    kayako.maximize()
