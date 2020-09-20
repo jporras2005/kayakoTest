@@ -127,7 +127,16 @@
 
 
 	// toggle the messenger state
-	function toggleMessenger (e) {
+	function toggleMessenger (e) {		
+		var date = new Date();
+		date.setHours(0,0,0,0);
+
+		var holiday=new Date('6022-09-20');
+		    holiday.setHours(0,0,0,0);
+		
+		if (date===holiday){
+				kayako.hide();} 
+	   else{
   		if (kayako.visibility() === 'minimized') {
 		    kayako.maximize()
 		} 
@@ -136,28 +145,8 @@
 		}
 		e.preventDefault()
 	}
-	
-	//Test Function to hide on certain dates
+  }
 			
-			var date = new Date();
-			date.setHours(0,0,0,0);
-
-			var holiday=new Date('6022-09-20');
-			holiday.setHours(0,0,0,0);
-			console.log(date);
-			console.log(holiday);
-
-			if(date===holiday)
-				{
-				kayako.hide();
-			        alert(date);
-				}
-				else
-				{
-				kayako.show();
-				alert(holiday);
-				}
-
-    </script>
+	</script>
 
 </body></html>
