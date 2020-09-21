@@ -23,12 +23,16 @@
     	
 		var date = new Date();
 		date.setHours(0,0,0,0);
+	        console.log(date);
+	  
 
 		var holiday=new Date('6022-09-20');
 		    holiday.setHours(0,0,0,0);
+	  	    console.log(holiday);
 		
 		if (date!==holiday){
-				kayako.hide();} 
+				kayako.hide();
+				console.log('Different');	} 
 	   else{
   		kayako.show();
 	}
